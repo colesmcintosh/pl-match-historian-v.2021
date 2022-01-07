@@ -1,2 +1,2 @@
 # Premier League Game Wizard
-Who played in the premier league on this day last year?
+Want to know a random day with a random game from the premier league? We got your back!
