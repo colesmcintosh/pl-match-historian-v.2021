@@ -1,2 +1,2 @@
 # Premier League Match Historian (2020-2021 edition)
-Want to know a random day with a random match from the 2020-2021 English premier league season? I got you!
+A simple Node application that generates a snippet of information regarding an arbitrary match up from the 2020-2021 English Premier League season.
