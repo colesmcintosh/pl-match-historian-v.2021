@@ -3,8 +3,8 @@ const plObj = require(`./pl.json`);
 
 // grabs an a random selection from matches and returns who was the home team, away team, date, and matchday
 const generateMessage = () => {
-    const randI = Math.floor(Math.random() * 760);
     const matchArray = plObj.matches;
+    const randI = Math.floor(Math.random() * matchArray.length-1);
     let homeTeam = matchArray[randI].team1;
     let awayTeam = matchArray[randI].team2;
     let matchDay = matchArray[randI].round;
@@ -12,7 +12,7 @@ const generateMessage = () => {
     return `On ${matchDay} (${matchDate}) ${homeTeam} played at home against ${awayTeam}`;
     };
 
-// some missing pieces in the dataset so I have a "try...catch" here to catch any errors
+// Just in case there are gaps in the dataset so I have a "try...catch" here to catch any errors
 try {
     console.log(generateMessage());
 } catch (error) {
